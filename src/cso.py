@@ -3,7 +3,7 @@ class Shift:
         self.id = id
         self.min_workers = min_workers
         self.max_workers = max_workers
-    
+
     def get_id(self):
         """Returns unique identifying key of this shift.
         rtype: int
@@ -36,7 +36,7 @@ class Worker:
         rtype: int
         """
         return self.max_hours
-    
+
     def get_min_hours(self):
         """Returns min hours this worker can work.
         rtype: int
@@ -48,9 +48,8 @@ class Worker:
         rtype: List of shift ids (int), sorted by preference, from most preferred to least preferred
         """
         return self.preferences
-    
+
     def get_qualifications(self):
         """Returns the ids of shifts this worker is qualified for.
         rtype: Set of shift ids (int)"""
         return self.qualifications
-
