@@ -25,11 +25,15 @@ class Shift:
 
 
 class Worker:
-    def __init__(self, max_hours, min_hours, preferences, qualifications):
+    def __init__(self, id, max_hours, min_hours, preferences, qualifications):
+        self.id = id
         self.max_hours = max_hours
         self.min_hours = min_hours
         self.preferences = preferences
         self.qualifications = qualifications
+
+    def get_id(self):
+        return self.id
 
     def get_max_hours(self):
         """Returns max hours this worker can work.

@@ -22,7 +22,7 @@ class WorkerTest(unittest.TestCase):
         self.workers = []
         for i in range(10):
             # random preferences
-            new_worker = cso.Worker(5, 0, random.sample(range(10), 4),
+            new_worker = cso.Worker(i, 5, 0, random.sample(range(10), 4),
                                     random.sample(range(10), 4))
             self.workers.append(new_worker)
 
